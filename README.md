@@ -14,3 +14,6 @@ HTTPS OK: 274ms - https://www.myweb.com:8080/index.html|time=274ms;1500;4000;0;
 
 check_ddos example
 ./check_ddos.py -c 300 -w 200
+
+check_nginx 
+./check_nginx.sh -H localhost -P 80 -p /var/run -n nginx.pid -s nginx_status -o /tmp -w 15000 -c 20000
